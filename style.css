@@ -1,10 +1,14 @@
+:root {
+  --line-color: #bdac9a;
+}
+
 body {
     background-color: rgb(75, 72, 69);    
     padding: 0;
     margin: 0;
 }
     
-#main {
+main {
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -16,7 +20,7 @@ body {
 #content {
     background-color: rgba(188, 169, 151, 0.18);
     padding: 0.3rem;
-    border: 2px solid #bdac9a;
+    border: 2px solid var(--line-color);
     flex: 0 1 auto;
 }
 
@@ -51,4 +55,9 @@ a:first-letter {
 
 a:hover {
     transform: perspective(1px) translateX(1rem);
+}
+
+hr {
+    border: none;
+    border-top: 1px solid var(--line-color);
 }
