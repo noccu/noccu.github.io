@@ -1,9 +1,13 @@
 :root {
   --line-color: #bdac9a;
+  --bg-color: rgb(75, 72, 69);  
+  --panel-color: rgba(188, 169, 151, 0.18);
+  --theme-color: rgb(158, 141, 125);
+  --text-color: #30231c;
 }
 
 body {
-    background-color: rgb(75, 72, 69);    
+    background-color: var(--bg-color);
     padding: 0;
     margin: 0;
 }
@@ -18,14 +22,14 @@ main {
 }
 
 #content {
-    background-color: rgba(188, 169, 151, 0.18);
+    background-color: var(--panel-color);
     padding: 0.3rem;
     border: 2px solid var(--line-color);
     flex: 0 1 auto;
 }
 
 .plat {
-    background-color: rgb(158, 141, 125);
+    background-color: var(--theme-color);
     font-size: 1.6rem;
     cursor: pointer;
     margin-top: 0.1em;
