@@ -45,6 +45,14 @@ main {
     background-color: rgb(185, 166, 148);
 }
 
+.faded {
+    opacity: 0.2
+}
+
+.hidden {
+    display: none;
+}
+
 a {
     color: #30231c;
     text-decoration: none;
