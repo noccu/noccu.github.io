@@ -1,13 +1,15 @@
 :root {
-  --line-color: #bdac9a;
+  --line-color: rgb(189, 172, 154);
   --bg-color: rgb(75, 72, 69);  
   --panel-color: rgba(188, 169, 151, 0.18);
   --theme-color: rgb(158, 141, 125);
-  --text-color: #30231c;
+  --text-color-inverted: rgb(48, 35, 28);
+  --highlight-color: rgb(185, 166, 148);
 }
 
 body {
     background-color: var(--bg-color);
+    color: var(--theme-color);
     padding: 0;
     margin: 0;
 }
@@ -21,7 +23,23 @@ main {
     height: 100%;
 }
 
-#content {
+section {
+    margin-bottom: 1.2rem;
+}
+
+a {
+    color: var(--theme-color);
+}
+
+a:visited {
+    color: inherit;
+}
+
+a:hover {
+    color: var(--highlight-color)
+}
+
+#platforms {
     background-color: var(--panel-color);
     padding: 0.3rem;
     border: 2px solid var(--line-color);
@@ -30,7 +48,7 @@ main {
 
 .plat {
     background-color: var(--theme-color);
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     cursor: pointer;
     margin-top: 0.1em;
     text-transform: uppercase;
@@ -42,7 +60,7 @@ main {
 }
 
 .plat:hover {
-    background-color: rgb(185, 166, 148);
+    background-color: var(--highlight-color)
 }
 
 .faded {
@@ -53,19 +71,19 @@ main {
     display: none;
 }
 
-a {
-    color: #30231c;
+#platforms a {
+    color: var(--text-color-inverted);
     text-decoration: none;
     display: block;
     padding: 0.3rem 2rem 0.3rem 0.75rem;
     transition: transform 0.5s;
 }
 
-a:first-letter {
+#platforms a:first-letter {
     font-size: 1.6em;
 }
 
-a:hover {
+#platforms a:hover {
     transform: perspective(1px) translateX(1rem);
 }
 
