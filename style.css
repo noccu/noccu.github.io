@@ -1,6 +1,6 @@
 :root {
   --line-color: rgb(189, 172, 154);
-  --bg-color: rgb(75, 72, 69);  
+  --bg-color: rgb(75, 72, 69);
   --panel-color: rgba(188, 169, 151, 0.18);
   --theme-color: rgb(158, 141, 125);
   --text-color-inverted: rgb(48, 35, 28);
@@ -8,86 +8,86 @@
 }
 
 body {
-    background-color: var(--bg-color);
-    color: var(--theme-color);
-    padding: 0;
-    margin: 0;
+  background-color: var(--bg-color);
+  color: var(--theme-color);
+  padding: 0;
+  margin: 0;
 }
-    
+
 main {
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
 
 section {
-    margin-bottom: 1.2rem;
+  margin-bottom: 1.2rem;
 }
 
 a {
-    color: var(--theme-color);
+  color: var(--theme-color);
 }
 
 a:visited {
-    color: inherit;
+  color: inherit;
 }
 
 a:hover {
-    color: var(--highlight-color)
+  color: var(--highlight-color)
 }
 
 #platforms {
-    background-color: var(--panel-color);
-    padding: 0.3rem;
-    border: 2px solid var(--line-color);
-    flex: 0 1 auto;
+  background-color: var(--panel-color);
+  padding: 0.3rem;
+  border: 2px solid var(--line-color);
+  flex: 0 1 auto;
 }
 
 .plat {
-    background-color: var(--theme-color);
-    font-size: 1.5rem;
-    cursor: pointer;
-    margin-top: 0.1em;
-    text-transform: uppercase;
-    line-height: 1;
+  background-color: var(--theme-color);
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin-top: 0.1em;
+  text-transform: uppercase;
+  line-height: 1;
 }
 
 .plat:first-of-type {
-    margin-top: 0;
+  margin-top: 0;
 }
 
 .plat:hover {
-    background-color: var(--highlight-color)
+  background-color: var(--highlight-color)
 }
 
 .faded {
-    opacity: 0.2
+  opacity: 0.2
 }
 
 .hidden {
-    display: none;
+  display: none;
 }
 
 #platforms a {
-    color: var(--text-color-inverted);
-    text-decoration: none;
-    display: block;
-    padding: 0.3rem 2rem 0.3rem 0.75rem;
-    transition: transform 0.5s;
+  color: var(--text-color-inverted);
+  text-decoration: none;
+  display: block;
+  padding: 0.3rem 2rem 0.3rem 0.75rem;
+  transition: transform 0.5s;
 }
 
 #platforms a:first-letter {
-    font-size: 1.6em;
+  font-size: 1.6em;
 }
 
 #platforms a:hover {
-    transform: perspective(1px) translateX(1rem);
+  transform: perspective(1px) translateX(1rem);
 }
 
 hr {
-    border: none;
-    border-top: 1px solid var(--line-color);
+  border: none;
+  border-top: 1px solid var(--line-color);
 }
