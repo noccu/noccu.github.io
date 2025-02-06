@@ -1,0 +1,11 @@
+#terms {
+    color: var(--main-color);
+    border: 1px solid var(--highlight-color);
+    max-width: 60%;
+    padding: 1rem;
+}
+
+h2,
+h4 {
+    border-bottom: 1px dotted var(--highlight-color);
+}
