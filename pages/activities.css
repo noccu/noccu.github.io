@@ -1,0 +1,17 @@
+#activities {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+#activities article {
+    flex: 1 1 20%;
+}
+
+#activities article hgroup {
+    white-space: nowrap;
+}
+
+time {
+    color: var(--highlight-color)
+}

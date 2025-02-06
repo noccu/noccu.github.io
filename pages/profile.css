@@ -1,0 +1,31 @@
+#profile {
+    display: grid;
+    grid-template-columns: 0.6fr 1.4fr;
+    gap: 0.5em;
+    grid-template-areas: "name content";
+    padding: 2rem;
+    border: 1px solid var(--highlight-color);
+  }
+
+  #name {
+    grid-area: name;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+  }
+
+  #profile address {
+    grid-area: bottom;
+    justify-self: flex-end;
+    align-self: center;
+  }
+
+  .profile-heading {
+    border-bottom: 1px dotted var(--highlight-color);
+  }
+
+  #details {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1em;
+  }
